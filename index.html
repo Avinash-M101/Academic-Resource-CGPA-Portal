@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AcademicHub | Student Portal</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript files -->
+    <script src="js/data.js" defer></script>
+    <script src="js/resources.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/cgpa.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Academic<span>Hub</span></h2>
+            <p>Student Learning Portal</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="#dashboard" class="nav-link active">
+                Dashboard
+            </a>
+
+            <a href="#resources" class="nav-link">
+                Academic Resources
+            </a>
+
+            <a href="#calculator" class="nav-link">
+                CGPA Calculator
+            </a>
+
+            <a href="#bookmarks" class="nav-link">
+                Bookmarks
+            </a>
+
+            <a href="#profile" class="nav-link">
+                My Profile
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>AcademicHub ©️ 2026</p>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div class="page-heading">
+                <h1>Student Dashboard</h1>
+                <p>Manage your academic activities in one place.</p>
+            </div>
+
+            <div class="student-info">
+                <div class="avatar">S</div>
+                <span>Student</span>
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard -->
+        <section id="dashboard" class="content-section">
+
+            <div class="welcome-card">
+                <h2>Welcome to AcademicHub!</h2>
+
+                <p>
+                    Find study materials, access academic resources
+                    and keep track of your academic performance.
+                </p>
+            </div>
+
+
+            <!-- Dashboard Statistics -->
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <h3>Total Resources</h3>
+                    <p id="total-resources">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Total Subjects</h3>
+                    <p id="total-subjects">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Resource Categories</h3>
+                    <p id="total-categories">0</p>
+                </div>
+
+            </div>
+
+
+            <!-- Quick Access -->
+            <div class="section-heading">
+                <h2>Quick Access</h2>
+                <p>Go directly to the section you need.</p>
+            </div>
+
+            <div class="quick-access">
+
+                <a href="#resources" class="quick-card">
+                    <div class="card-icon">📚</div>
+
+                    <h3>Academic Resources</h3>
+
+                    <p>
+                        Explore notes, previous year papers
+                        and programming materials.
+                    </p>
+
+                    <span>Explore Resources →</span>
+                </a>
+
+
+                <a href="#calculator" class="quick-card">
+                    <div class="card-icon">📊</div>
+
+                    <h3>CGPA Calculator</h3>
+
+                    <p>
+                        Calculate your semester-wise SGPA
+                        and overall CGPA.
+                    </p>
+
+                    <span>Calculate CGPA →</span>
+                </a>
+
+            </div>
+
+
+            <!-- Recent Resources -->
+            <div class="section-heading">
+                <h2>Recently Added Resources</h2>
+                <p>Some useful study materials for students.</p>
+            </div>
+
+            <div id="recent-resources" class="resource-container">
+
+                <!-- JavaScript will display resources here -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Academic Resources -->
+        <section id="resources" class="content-section hidden">
+
+            <div class="section-heading">
+                <h2>Academic Resources</h2>
+
+                <p>
+                    Explore study materials according to your
+                    academic subjects.
+                </p>
+            </div>
+
+            <div id="all-resources" class="resource-container">
+
+                <!-- All resources will appear here -->
+
+            </div>
+
+        </section>
+
+
+        <!-- CGPA Calculator -->
+        <section id="calculator" class="content-section hidden">
+
+            <div class="section-heading">
+                <h2>CGPA Calculator</h2>
+
+                <p>
+                    Calculate your semester-wise SGPA
+                    and overall CGPA.
+                </p>
+            </div>
+
+            <div class="placeholder-card">
+                <h3>Academic Performance Calculator</h3>
+
+                <p>
+                    The interactive SGPA and CGPA calculator
+                    will be added in upcoming milestones.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Bookmarks -->
+        <section id="bookmarks" class="content-section hidden">
+
+            <div class="section-heading">
+                <h2>My Bookmarks</h2>
+
+                <p>
+                    Your favourite academic resources
+                    will be available here.
+                </p>
+            </div>
+
+            <div class="placeholder-card">
+                <p>No bookmarked resources yet.</p>
+            </div>
+
+        </section>
+
+
+        <!-- Profile -->
+        <section id="profile" class="content-section hidden">
+
+            <div class="section-heading">
+                <h2>My Profile</h2>
+
+                <p>Manage your basic student information.</p>
+            </div>
+
+            <div class="placeholder-card">
+                <p>Student profile functionality is coming soon.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
