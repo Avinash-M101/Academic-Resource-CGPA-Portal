@@ -5,7 +5,7 @@ A web-based academic portal for students.
 ## Technologies Used
 - HTML
 - CSS
-- JavaScript (Coming Soon)
+- JavaScript (In Future)
 
 ## Project Status
 Currently, HTML and CSS development is in progress.
