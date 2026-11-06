@@ -1,34 +1,17 @@
 # Academic Resource & CGPA Portal
 
-AcademicHub is a student-focused web application
-designed to organize academic resources and help
-students manage their academic activities.
+A web-based academic portal for students.
 
 ## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub
-
-## Features
-
-- Student dashboard
-- Academic resource section
-- Dynamic resource display
-- Dashboard statistics
-- Section navigation
-- Responsive design
+- HTML
+- CSS
+- JavaScript (Coming Soon)
 
 ## Project Status
+Currently, HTML and CSS development is in progress.
 
-Currently under development.
-
-## How to Run
-
-1. Clone this repository.
-2. Open the project folder in VS Code.
-3. Install the Live Server extension.
-4. Right-click index.html.
-5. Select Open with Live Server.
+## Future Features
+- Academic Resources
+- SGPA Calculator
+- CGPA Calculator
+- Semester-wise Notes
