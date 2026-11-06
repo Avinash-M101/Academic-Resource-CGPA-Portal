@@ -1,1 +1,1 @@
-// TODO: Add academic resources data in future.
+// TO DO: Add academic resources data in future.
