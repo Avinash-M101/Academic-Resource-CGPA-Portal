@@ -1,5 +1,4 @@
-// Select dashboard elements
-
+// Dashboard elements
 const totalResources = document.getElementById("total-resources");
 const totalSubjects = document.getElementById("total-subjects");
 const totalCategories = document.getElementById("total-categories");
@@ -7,9 +6,40 @@ const totalCategories = document.getElementById("total-categories");
 const recentResources = document.getElementById("recent-resources");
 const allResources = document.getElementById("all-resources");
 
+const pageTitle = document.getElementById("page-title");
+const pageSubtitle = document.getElementById("page-subtitle");
+
+
+// Information for each page
+const pageDetails = {
+    dashboard: {
+        title: "Student Dashboard",
+        subtitle: "Your academic overview at a glance."
+    },
+
+    resources: {
+        title: "Academic Resources",
+        subtitle: "Find your study materials in one place."
+    },
+
+    calculator: {
+        title: "CGPA Calculator",
+        subtitle: "Calculate and manage your academic results."
+    },
+
+    bookmarks: {
+        title: "My Bookmarks",
+        subtitle: "Access your saved academic resources."
+    },
+
+    profile: {
+        title: "Student Profile",
+        subtitle: "View your student information."
+    }
+};
+
 
 // Update dashboard statistics
-
 function updateDashboard() {
 
     const subjects = new Set(
@@ -27,22 +57,11 @@ function updateDashboard() {
     totalResources.textContent = academicResources.length;
     totalSubjects.textContent = subjects.size;
     totalCategories.textContent = categories.size;
-
 }
 
 
-// Show the selected section
-
+// Show selected section
 function showSection(sectionId) {
-
-    const sections = document.querySelectorAll(".content-section");
-    const navigationLinks = document.querySelectorAll(".nav-link");
-
-    sections.forEach(function(section) {
-
-        section.classList.add("hidden");
-
-    });
 
     const selectedSection = document.getElementById(sectionId);
 
@@ -50,45 +69,53 @@ function showSection(sectionId) {
         return;
     }
 
+    const sections = document.querySelectorAll(".content-section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    sections.forEach(function(section) {
+        section.classList.add("hidden");
+    });
+
     selectedSection.classList.remove("hidden");
 
-
     // Update active navigation link
-
-    navigationLinks.forEach(function(link) {
+    navLinks.forEach(function(link) {
 
         link.classList.remove("active");
 
         if (link.getAttribute("href") === "#" + sectionId) {
             link.classList.add("active");
         }
-
     });
 
+    // Update page heading and description
+    const currentPage = pageDetails[sectionId];
+
+    if (currentPage) {
+        pageTitle.textContent = currentPage.title;
+        pageSubtitle.textContent = currentPage.subtitle;
+    }
 }
 
 
-// Handle navigation clicks
+// Sidebar navigation
+const navLinks = document.querySelectorAll(".nav-link");
 
-const navigationLinks = document.querySelectorAll(".nav-link");
-const quickAccessLinks = document.querySelectorAll(".quick-card");
-
-navigationLinks.forEach(function(link) {
+navLinks.forEach(function(link) {
 
     link.addEventListener("click", function(event) {
 
         event.preventDefault();
 
-        const sectionId = this.getAttribute("href").substring(1);
+        const sectionId = link.getAttribute("href").substring(1);
 
         showSection(sectionId);
-
     });
-
 });
 
 
-// Handle quick access clicks
+// Quick access navigation
+const quickAccessLinks = document.querySelectorAll(".quick-card");
 
 quickAccessLinks.forEach(function(link) {
 
@@ -96,17 +123,14 @@ quickAccessLinks.forEach(function(link) {
 
         event.preventDefault();
 
-        const sectionId = this.getAttribute("href").substring(1);
+        const sectionId = link.getAttribute("href").substring(1);
 
         showSection(sectionId);
-
     });
-
 });
 
 
-// Load dashboard data
-
+// Initial dashboard setup
 updateDashboard();
 
 displayResources(
