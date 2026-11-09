@@ -280,10 +280,8 @@ body {
 .resource-card {
     background-color: white;
     padding: 22px;
-
     border: 1px solid #e2e8f0;
     border-radius: 10px;
-
     transition: 0.3s;
 }
 
@@ -420,6 +418,75 @@ body {
 
     .welcome-card {
         padding: 22px;
+    }
+
+}
+
+/* Resources section heading */
+
+.resources-heading {
+    margin-bottom: 25px;
+}
+
+.resources-heading h2 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.resources-heading p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* Resource card layout */
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* .resource-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+} */
+
+.resource-card h3 {
+    font-size: 17px;
+    margin: 14px 0 8px;
+}
+
+.resource-subject {
+    color: #2563eb;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.resource-description {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Message when resources are unavailable */
+
+.no-resources {
+    color: #64748b;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+    .resource-grid {
+        grid-template-columns: 1fr;
     }
 
 }
