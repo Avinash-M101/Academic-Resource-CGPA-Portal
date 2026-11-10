@@ -166,14 +166,37 @@
         <!-- Academic Resources -->
         <section id="resources" class="content-section hidden">
 
-            <div class="resources-heading">
+                <div class="resources-heading">
+                    <h2>Explore Academic Resources</h2>
+                    <p>Find notes, tutorials and practice materials for your subjects.</p>
+                </div>
 
-                <h2>Explore Academic Resources</h2>
-                <p>Find notes, tutorials and practice materials for your subjects.</p>
-                
-            </div>
+                <!-- Search and filters -->
+                <div class="resource-filters">
 
-            <div id="all-resources" class="resource-grid"></div>
+                    <div class="search-box">
+                        <input
+                            type="text"
+                            id="resource-search"
+                            placeholder="Search by title or subject...">
+                    </div>
+
+                    <div class="filter-options">
+
+                        <select id="category-filter">
+                            <option value="">All Categories</option>
+                        </select>
+                        
+                        <select id="subject-filter">
+                            <option value="">All Subjects</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- Resource cards -->
+                <div id="all-resources" class="resource-grid"></div>
 
         </section>
 

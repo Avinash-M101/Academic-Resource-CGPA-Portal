@@ -142,3 +142,5 @@ displayResources(
     academicResources,
     allResources
 );
+
+setupResourceFilters();
