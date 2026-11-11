@@ -551,3 +551,217 @@ body {
     }
 
 }
+
+/* SGPA CALCULATOR */
+
+.calculator-heading {
+    margin-bottom: 25px;
+}
+
+.calculator-heading h2 {
+    font-size: 26px;
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.calculator-heading p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.calculator-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.calculator-info {
+    margin-bottom: 22px;
+}
+
+.calculator-info h3 {
+    font-size: 19px;
+    color: #172554;
+    margin-bottom: 6px;
+}
+
+.calculator-info p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+
+/* Subject Table */
+
+.subject-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+.subject-table th {
+    background-color: #f1f5f9;
+    color: #334155;
+    padding: 13px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.subject-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* Subject Name Input */
+
+.subject-name {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.subject-name:focus {
+    border-color: #2563eb;
+}
+
+
+/* Grade Dropdown */
+
+.subject-grade {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.subject-grade:focus {
+    border-color: #2563eb;
+}
+
+
+/* Buttons */
+
+.add-subject-btn {
+    background-color: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.add-subject-btn:hover {
+    background-color: #dbeafe;
+}
+
+.calculate-btn {
+    display: block;
+    width: 100%;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.calculate-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.remove-subject-btn {
+    background-color: #fee2e2;
+    color: #dc2626;
+    border: none;
+    padding: 9px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.remove-subject-btn:hover {
+    background-color: #fecaca;
+}
+
+
+/* Calculator Message */
+
+.calculator-message {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+/* SGPA Result */
+
+.sgpa-result {
+    margin-top: 22px;
+    padding: 22px;
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sgpa-result p {
+    color: #475569;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.sgpa-result h2 {
+    color: #2563eb;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+
+/* Hide Elements */
+
+.hidden {
+    display: none;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .calculator-card {
+        padding: 15px;
+    }
+
+    .calculator-heading h2 {
+        font-size: 22px;
+    }
+
+    .subject-table {
+        min-width: 450px;
+    }
+
+    .add-subject-btn {
+        width: 100%;
+        margin-right: 0;
+    }
+
+}

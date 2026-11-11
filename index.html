@@ -186,7 +186,7 @@
                         <select id="category-filter">
                             <option value="">All Categories</option>
                         </select>
-                        
+
                         <select id="subject-filter">
                             <option value="">All Subjects</option>
                         </select>
@@ -203,25 +203,62 @@
         <!-- CGPA Calculator -->
         <section id="calculator" class="content-section hidden">
 
-            <div class="section-heading">
-                <h2>CGPA Calculator</h2>
-
+            <div class="calculator-heading">
+                <h2>SGPA Calculator</h2>
                 <p>
-                    Calculate your semester-wise SGPA
-                    and overall CGPA.
+                    Calculate your semester grade point average
+                    by entering your subjects and selecting your grades.
                 </p>
             </div>
 
-            <div class="placeholder-card">
-                <h3>Academic Performance Calculator</h3>
+            <div class="calculator-card">
 
-                <p>
-                    The interactive SGPA and CGPA calculator
-                    will be added in upcoming milestones.
-                </p>
+                <div class="calculator-info">
+                    <h3>Enter Subject Details</h3>
+                    <p>
+                        Add your subjects and select the grades
+                        you received in each subject.
+                    </p>
+                </div>
+
+                <div class="subject-table-wrapper">
+                    <table class="subject-table">
+
+                        <thead>
+                            <tr>
+                                <th>Subject Name</th>
+                                <th>Select Grade</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="subject-list">
+                            <!-- JavaScript will add subject rows here -->
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <button type="button" id="add-subject" class="add-subject-btn">
+                    + Add Subject
+                </button>
+
+                <button type="button" id="calculate-sgpa" class="calculate-btn">
+                    Calculate SGPA
+                </button>
+
+                <p id="calculator-message" class="calculator-message"></p>
+
+                <div id="sgpa-result" class="sgpa-result hidden">
+                    <p>Your Estimated SGPA</p>
+                    <h2 id="sgpa-value">0.00</h2>
+                    <p id="sgpa-summary"></p>
+                </div>
+
             </div>
 
         </section>
+        
 
 
         <!-- Bookmarks -->
