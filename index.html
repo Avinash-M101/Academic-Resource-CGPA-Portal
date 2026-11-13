@@ -15,6 +15,7 @@
     <script src="js/resources.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="js/cgpa.js" defer></script>
+    <script src="js/overall_cgpa.js" defer></script>
 </head>
 
 <body>
@@ -253,6 +254,49 @@
                     <p>Your Estimated SGPA</p>
                     <h2 id="sgpa-value">0.00</h2>
                     <p id="sgpa-summary"></p>
+                </div>
+
+            </div>
+
+            <!-- Overall CGPA Calculator -->
+
+            <div class="calculator-card overall-cgpa-card">
+
+                <div class="calculator-info">
+                    <h3>Overall CGPA Calculator</h3>
+                    <p>
+                        Enter your semester-wise SGPA to calculate
+                        your overall CGPA.
+                    </p>
+                </div>
+
+                <!-- Semester Input Table -->
+                
+                <div class="semester-list" id="semester-list">
+
+                    <!-- JavaScript will add semester rows here -->
+
+                </div>
+
+                <button type="button" id="add-semester" class="add-subject-btn">
+                    + Add Semester
+                </button>
+
+                <button type="button" id="calculate-cgpa" class="calculate-btn">
+                    Calculate CGPA
+                </button>
+
+                <p id="cgpa-message" class="calculator-message"></p>
+
+                <!-- CGPA Result -->
+                <div id="cgpa-result" class="sgpa-result hidden">
+
+                    <p>Your Overall CGPA</p>
+
+                    <h2 id="cgpa-value">0.00</h2>
+
+                    <p id="cgpa-summary"></p>
+
                 </div>
 
             </div>

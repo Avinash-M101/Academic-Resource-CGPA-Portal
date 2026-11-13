@@ -765,3 +765,62 @@ body {
     }
 
 }
+
+/* OVERALL CGPA CALCULATOR */
+
+.overall-cgpa-card {
+    margin-top: 25px;
+}
+
+.semester-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.semester-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+    align-items: center;
+    gap: 15px;
+    padding: 14px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.semester-row label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #334155;
+}
+
+.semester-sgpa {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.semester-sgpa:focus {
+    border-color: #2563eb;
+}
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    .semester-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .semester-row .remove-subject-btn {
+        width: 100%;
+    }
+
+}
